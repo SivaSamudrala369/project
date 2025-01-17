@@ -1,0 +1,38 @@
+using System;
+
+class Animal
+{
+    // Base class method marked as virtual
+    public virtual void Speak()
+    {
+        Console.WriteLine("Animal makes a sound.");
+    }
+}
+
+class Dog : Animal
+{
+    // Override the base class method
+    public override void Speak()
+    {
+        Console.WriteLine("Dog barks.");
+    }
+}
+
+class Cat : Animal
+{
+    // Override the base class method
+    public override void Speak()
+    {
+        Console.WriteLine("Cat meows.");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Create instances of Dog and Cat
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+
+        
